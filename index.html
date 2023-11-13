@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Template main</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ -->
+<!-- <link rel="stylesheet" href="style.css"> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+  .w3-mumbo{font-size:3em}
+  .w3-kumbo{font-size:2.5em}
+  body{
+    box-sizing: border-box;
+    margin: 0;
+  }
+  /* Style the images within the containers */
+  .w3-container {
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+  }
+  
+  /* Style the images within the containers */
+  
+  
+  /* Define the responsiveness for the containers */
+  .w3-row{
+    <!-- border:solid 3px green; -->
+  }
+
+  .w3-half {
+    width: 50%;
+    padding:0 4px 0 8px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .w3-row{
+      <!-- border: solid 3px green; -->
+      display: block;
+    }
+    .w3-half {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+
+  
+  @media (min-width: 1280px) {
+    .w3-row{
+      <!-- border: solid 3px green; -->
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      
+    }
+    .w3-half {
+      <!-- border: solid 3px red; -->
+    }
+ 
+    .w3-container {
+      min-height: 780px;
+      max-height: 100vh;
+    }
+
+  }
+
+  .bag{
+    display: block;
+    background-image: url('/images/profile_girl_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    min-width: 100px;
+    height: 80vh;
+    <!-- border: solid 3px blueviolet; -->
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+</head>
+<body>
+    <div class="w3-container">
+        <h1 class="w3-mumbo">Czesc, milo Cie poznac, kliknij na zdjecie zeby dowiedziec sie o nas wiecej.</h1>
+        <div class="w3-row">
+          <div class="w3-half">
+            <p class="w3-kumbo">Dziecko 1</p>
+            <a href="dziecko1.html" class="bag">
+              <!-- <img src="/images/profile_girl_1.jpg" class="w3-round w3-image-fit" alt="Photo 1"> -->
+            </a>
+          </div>
+          <div class="w3-half">
+            <p class="w3-kumbo">Dziecko 2</p>
+            <a href="dziecko2.html" class="bag">
+              <!-- <img src="/images/profile_girl_2.jpg" class="w3-round w3-image-fit" alt="Photo 2"> -->
+            </a>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
