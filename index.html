@@ -10,36 +10,47 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-  body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-  .w3-mumbo{font-size:3em}
-  .w3-kumbo{font-size:2.5em}
+  body, h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat", sans-serif
+  }
+  .w3-mumbo{font-size:1.7em}
+  .w3-kumbo{
+    font-size:1.5em;
+    /* border: solid 3px red; */
+    margin: 4px;
+  }
+
   body{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    height: 100%;
   }
   /* Style the images within the containers */
   .w3-container {
     text-align: center;
     display:flex;
     flex-direction: column;
-  }
-  
-  /* Style the images within the containers */
-  
-  
-  /* Define the responsiveness for the containers */
-  .w3-row{
-    <!-- border:solid 3px green; -->
+
   }
 
+  /* Style the images within the containers */
+
+
+  /* Define the responsiveness for the containers */
+  /* .w3-row{
+    border:solid 3px blue;
+  } */
+
   .w3-half {
+    /* border: solid 3px green; */
     width: 50%;
-    padding:0 4px 0 8px;
+    padding:0 4px 0 4px;
   }
-  
-  @media only screen and (max-width: 768px) {
+
+  @media only screen and (min-width: 768px) {
     .w3-row{
-      <!-- border: solid 3px green; -->
+      /* border: solid 3px green; */
       display: block;
     }
     .w3-half {
@@ -47,24 +58,30 @@
       padding: 0;
     }
   }
-  
 
-  
-  @media (min-width: 1280px) {
+
+
+  @media (max-width: 1280px) {
     .w3-row{
-      <!-- border: solid 3px green; -->
+      /* <!-- border: solid 3px green; --> */
       width: 100%;
       display: flex;
       flex-direction: row;
-      
+
     }
     .w3-half {
-      <!-- border: solid 3px red; -->
-    }
- 
+    /* border: solid 3px green; */
+    width: 50%;
+    padding:0 4px 0 4px;
+  }
+
     .w3-container {
-      min-height: 780px;
+      min-height: 400px;
       max-height: 100vh;
+    }
+    .bag{
+      background-size: contain; /*contain*/
+      background-position: top;
     }
 
   }
@@ -73,12 +90,12 @@
     display: block;
     background-image: url('./images/profile_girl_1.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; /*contain*/
     background-position: center;
     min-height: 100px;
     min-width: 100px;
-    height: 80vh;
-    <!-- border: solid 3px blueviolet; -->
+    height: 70vh;
+    /* <!-- border: solid 3px blueviolet; --> */
     margin-left: auto;
     margin-right: auto;
   }
