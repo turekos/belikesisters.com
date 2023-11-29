@@ -1,10 +1,10 @@
   body, h1,h2,h3,h4,h5,h6 {
     font-family: "Montserrat", sans-serif
   }
-  .hello-text{
+  .bls-hello-text{
     font-size:1.8em
   }
-  .child-name{
+  .bls-child-name{
     font-size:1.9em;
     /* border: solid 3px red; */
     margin: 4 0 4 0;
@@ -17,25 +17,25 @@
     height: 100%;
   }
   /* Style the images within the containers */
-  .w3-container {
+  .bls-main-wrap {
     text-align: center;
     display:flex;
     flex-direction: column;
 
   }
-  .w3-row{
+  .bls-photo-row{
     /* border:solid 3px blue; */
     display:flex;
   }
 
-  .w3-half {
+  .bls-photo-half {
     /* border: solid 3px green; */
     width: 50%;
     padding:0 30px 0 30px;
 
   }
 
-  .bag{
+  .bls-image-container{
     display: block;
     border-radius: 5px;
     background-repeat: no-repeat;
@@ -48,15 +48,15 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .image-container-left{
+  .bls-image-container-left{
     background-image: url('./images/profile_girl_1.jpg');
   }
-  .image-container-right{
+  .bls-image-container-right{
     background-image: url('./images/profile_girl_1.jpg');
   }
 
   /* footer */
-  .links-wrap{
+  .bls-links-wrap{
     display: flex;
     justify-content: center;
     /* border: solid 3px blue; */
@@ -65,81 +65,129 @@
     width:auto;
   }
 
-.link {
+.bls-link {
   margin: 1em 0.2em;
   opacity: 0.6;
   filter: grayscale(100%)
 }
 
-.link:hover {
+.bls-link:hover {
   transition: 0.7s;
   opacity: 1;
 }
 
+/* child pages custom */
+.bls-child-big-img {
+  margin-bottom: 12px;
+  width:100%
+}
+.bls-bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./images/profile_girl_1.jpg');
+  min-height: 100%;
+}
+.bls-info-container{
+  padding: 0
+}
+.bls-info-img-small{
+  display:block;
+  width:60%;
+  margin:auto
+}
+.bls-info-img-large{
+  width:1000;
+  height:1333
+}
+.bls-child-main{
+  margin-left:40%
+}
+.bls-child-navigation{
+  display:none;
+  padding-top:150px;
+  right:0;
+  z-index:2
+}
+.bls-naigation-link{
+  padding:0 12px
+}
+.bls-navigation-sidebar{
+  width:40%
+}
+.bls-navigation-button{
+  width:auto;
+  right:0
+}
+.bls-child-footer{
+  margin:-24px
+}
+/* -------------------------- media ---------------------- */
 @media only screen and (max-width: 1280px) {
-    .child-name{
+    .bls-child-name{
         font-size: 1.8rem;
         margin: 0 0 1rem 0;
       }
-    .w3-row{
+    .bls-photo-row{
       /* <!-- border: solid 3px green; --> */
       width: 100%;
       display: flex;
       flex-direction: row;
 
     }
-    .w3-half {
+    .bls-photo-half {
     /* border: solid 3px green; */
         width: 50%;
         padding:0 4px 0 4px;
     }
 
-    .w3-container {
+    .bls-main-wrap {
         min-height: 400px;
         max-height: 100vh;
     }
-    .bag{
+    .bls-image-container{
       background-size: cover; /*contain*/
       background-position: center;
       max-height: 60vh;
     }
     /* footer */
-    .links-wrap{
-        display: flex;
-        justify-content: center;
-        /* border: solid 3px blue; */
-        margin-top: 1em;
-        font-size:24px;
-        width:auto;
+    .bls-links-wrap{
+      display: flex;
+      justify-content: center;
+      /* border: solid 3px blue; */
+      margin-top: 1em;
+      font-size:24px;
+      width:auto;
     }
 }
 
 @media only screen and (max-width: 768px) {
 
-    .hello-text{
+    .bls-hello-text{
         font-size:1.8em;
         margin: 1rem;
       }
-      .child-name{
+      .bls-child-name{
         font-size:1.8em;
         /* border: solid 3px red; */
         margin: 0.5rem;
-      }.w3-row{
+      }
+      .bls-photo-row{
       /* border: solid 3px green; */
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
-    .w3-half {
+    .bls-photo-half {
       width: 100vw;
       padding: 0;
     }
-    .bag{
+    .bls-bag-image-container{
         background-size: cover; /*contain*/
         background-position: center;
         margin: 10px;
       }
-      .w3-container {
+      .bls-main-wrap {
         max-height: 100%;
         width:100%;
     }

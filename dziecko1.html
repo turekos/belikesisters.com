@@ -4,33 +4,21 @@
 <title>dziecko 1</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
- -->
- <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style-main.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-.bgimg {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('./images/profile_girl_1.jpg');
-  min-height: 100%;
-}
-</style>
 </head>
 <body>
 
 <!-- Sidebar with image -->
-<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
-  <div class="bgimg"></div>
+<nav class="w3-sidebar w3-hide-medium w3-hide-small bls-navigation-sidebar">
+  <div class="bls-bgimg"></div>
 </nav>
 
 <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge bls-child-navigation" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright bls-naigation-link">
     <i class="fa fa-remove"></i>
   </a>
   <div class="w3-bar-block w3-center">
@@ -43,20 +31,17 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </nav>
 
 <!-- Page Content -->
-<div class="w3-main w3-padding-large" style="margin-left:40%">
+<div class="w3-main w3-padding-large bls-child-main">
 
   <!-- Menu icon to open sidebar -->
-  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black bls-navigation-button" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
   <!-- Header -->
-  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+  <header class="w3-container w3-center bls-info-container" id="home">
     <h1 class="w3-jumbo"><b>Dziecko 1</b></h1>
     <p>Krotkie info</p>
-    <img src="./images/profile_girl_1.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
-    <img src="./images/profile_girl_1.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
-    <!-- <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
-      <i class="fa fa-download"></i> Download Resume
-    </button> -->
+    <img src="./images/profile_girl_1.jpg" class="w3-image w3-hide-large w3-hide-small w3-round bls-info-img-small">
+    <img src="./images/profile_girl_1.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round bls-info-img-large">
   </header>
 
   <!-- Portfolio Section -->
@@ -67,16 +52,16 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half ">
-        <img src="./images/wedding.jpg" class="w3-round" style="width:100%">
-        <img src="./images/rocks.jpg" class="w3-round" style="width:100%">
-        <img src="./images/sailboat.jpg" class="w3-round" style="width:100%">
+        <img src="./images/wedding.jpg" class="w3-round bls-child-big-img">
+        <img src="./images/rocks.jpg" class="w3-round bls-child-big-img">
+        <img src="./images/sailboat.jpg" class="w3-round bls-child-big-img">
       </div>
 
       <div class="w3-half">
-        <img src="./images/underwater.jpg" class="w3-round" style="width:100%">
-        <img src="./images/chef.jpg" class="w3-round" style="width:100%">
-        <img src="./images/wedding.jpg" class="w3-round" style="width:100%">
-        <img src="./images/p6.jpg" class="w3-round" style="width:100%">
+        <img src="./images/underwater.jpg" class="w3-round bls-child-big-img">
+        <img src="./images/chef.jpg" class="w3-round bls-child-big-img">
+        <img src="./images/wedding.jpg" class="w3-round bls-child-big-img">
+        <img src="./images/p6.jpg" class="w3-round bls-child-big-img">
       </div>
     <!-- End photo grid -->
     </div>
@@ -124,7 +109,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- </div>   -->
 
   <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge bls-child-footer">
     <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
     <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
     <a href="https://www.snapchat.com/" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
