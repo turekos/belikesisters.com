@@ -52,7 +52,7 @@
     background-image: url('./images/profile_girl_1.jpg');
   }
   .bls-image-container-right{
-    background-image: url('./images/profile_girl_1.jpg');
+    background-image: url('./images/profile_girl_2.jpg');
   }
 
   /* footer */
@@ -81,12 +81,19 @@
   margin-bottom: 12px;
   width:100%
 }
-.bls-bgimg {
+.bls-child-bg-img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('./images/profile_girl_1.jpg');
+
   min-height: 100%;
+}
+
+.bls-child-1-bg-img{
+  background-image: url('./images/profile_girl_1.jpg')
+}
+.bls-child-2-bg-img{
+  background-image: url('./images/profile_girl_2.jpg')
 }
 .bls-info-container{
   padding: 3rem 0 0 0
